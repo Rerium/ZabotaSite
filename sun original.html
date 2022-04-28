@@ -1,0 +1,273 @@
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <style>
+          @import url(https://fonts.googleapis.com/css?family=Montserrat:400);
+          body {
+            font: 16px/1.4em "Montserrat", Arial, sans-serif;
+          }
+          * {
+            -webkit-box-sizing: border-box;
+               -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+          }
+          .chart-text {
+            /*font: 16px/1.4em "Montserrat", Arial, sans-serif;*/
+            fill: #000;
+            -moz-transform: translateY(0.1em);
+            -ms-transform: translateY(0.1em);
+            -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+          }
+          .chart-number {
+            font-size: 0.3em;
+            line-height: 1;
+            text-anchor: middle;
+            -moz-transform: translateY(-0.9em);
+            -ms-transform: translateY(-0.9em);
+            -webkit-transform: translateY(-0.9em);
+            transform: translateY(-0.9em);
+          }
+          .chart-label {
+            font-size: 0.1em;
+            text-transform: uppercase;
+            text-anchor: middle;
+            -moz-transform: translateY(-0.9em);
+            -ms-transform: translateY(-0.9em);
+            -webkit-transform: translateY(-0.9em);
+            transform: translateY(-0.9em);
+          }
+          figure {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            margin-left: -15px;
+            margin-right: -15px;
+            height: 100vh;
+          }
+          @media (min-width: 320px) {
+            figure {
+              flex-direction: row;
+            }
+          }
+          .figure-content,
+          .figure-key {
+            flex: 1;
+            padding-left: 15px;
+            padding-right: 15px;
+            align-self: center;
+          }
+          .figure-content svg {
+            height: auto;
+          }
+          .figure-key {
+            min-width: calc(8 / 12);
+          }
+          .figure-key [class*="shape-"] {
+            margin-right: 6px;
+          }
+          .figure-key-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+          }
+          .figure-key-list li {
+            margin: 0 0 8px;
+            padding: 0;
+          }
+          .shape-circle {
+            display: inline-block;
+            vertical-align: middle;
+            width: 32px;
+            height: 32px;
+            -webkit-border-radius: 50%;
+               -moz-border-radius: 50%;
+                    border-radius: 50%;
+          }
+          .shape-fuschia {
+            background-color: #ce4b99;
+          }
+          .shape-lemon-lime {
+            background-color: #b1c94e;
+          }
+          .shape-blue {
+            background-color: #377bbc;
+          }
+          .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+          }
+          </style> 
+  </head>
+  <body>
+  <script>
+   
+let lusine = {
+ name: "Люсинэ",
+ description: "Занимается художественным образованием",
+};
+let alex = {
+ name: "Александр",
+ description: "ГБУСО МО «Бронницкий комплексный центр социального обслуживания населения «Забота»",
+};
+let testVal = {
+ name: "test",
+ description: "testint",
+};
+let valName = [lusine, alex, testVal];
+  </script>
+      <figure>
+          <div class="figure-content" > 
+            <svg width="100%" height="100%" class="sun_good" aria-labelledby="Солнце добра" role="img" viewBox="0 0 42 42" id="sunGood">
+              <circle class="sun" cx="21" cy="21" role="presentation" fill="#ff0" r="10"></circle>
+              <circle class="sun_areal" cx="21" cy="21" fill="transparent" role="presentation" r="10" stroke-width="0.5" stroke="orange"></circle>
+              <circle id="rey-0" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="-1" stroke-dasharray="1 99">
+                <title id="titel-0">
+                </title>
+                <desc id="desc-0">
+                </desc>
+              </circle>
+              <circle id="rey-1" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="6" stroke-dasharray="1 99">
+                <title id="titel-1">
+                </title>
+                <desc id="desc-1">
+                </desc>
+              </circle>
+              <circle id="rey-2" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="10" stroke-dasharray="1 99">
+                <title id="titel-2">
+                </title>
+                <desc id="desc-2">
+                </desc>
+              </circle>
+              <circle id="rey-3" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="15" stroke-dasharray="1 99">
+                <title id="titel-3">
+                </title>
+                <desc id="desc-3">
+                </desc>
+              </circle>
+              <circle id="rey-4" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="20" stroke-dasharray="1 99">
+                <title id="titel-4">
+                </title>
+                <desc id="desc-4">
+                </desc>
+              </circle>
+              <circle id="rey-5" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="25" stroke-dasharray="1 99">
+                <title id="titel-5">
+                </title>
+                <desc id="desc-5">
+                </desc>
+              </circle>
+              <circle id="rey-6" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="30" stroke-dasharray="1 99">
+                <title id="titel-6">
+                </title>
+                <desc id="desc-6">
+                </desc>
+              </circle>
+              <circle id="rey-7" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="35" stroke-dasharray="1 99">
+                <title id="titel-7">
+                </title>
+                <desc id="desc-7">
+                </desc>
+              </circle>
+              <circle id="rey-8" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="40" stroke-dasharray="1 99">
+                <title id="titel-8">
+                </title>
+                <desc id="desc-8">
+                </desc>
+              </circle>
+              <circle id="rey-9" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="45" stroke-dasharray="1 99">
+                <title id="titel-9">
+                </title>
+                <desc id="desc-9">
+                </desc>
+              </circle>
+              <circle id="rey-10" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="50" stroke-dasharray="1 99">
+                <title id="titel-10">
+                </title>
+                <desc id="desc-10">
+                </desc>
+              </circle>
+              <circle id="rey-11" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="55" stroke-dasharray="1 99">
+                <title id="titel-11">
+                </title>
+                <desc id="desc-11">
+                </desc>
+              </circle>
+              <circle id="rey-12" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="60" stroke-dasharray="1 99">
+                <title id="titel-12">
+                </title>
+                <desc id="desc-12">
+                </desc>
+              </circle>
+              <circle id="rey-13" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="65" stroke-dasharray="1 99">
+                <title id="titel-13"></title>
+                <desc id="desc-13">
+                </desc>
+              </circle>
+              <circle id="rey-14" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="70" stroke-dasharray="1 99">
+                <title id="titel-14">
+                </title>
+                <desc id="desc-14">
+                </desc>
+              </circle>
+              <circle id="rey-15" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="75" stroke-dasharray="1 99">
+                <title id="titel-15">
+                </title>
+                <desc id="desc-15">
+                </desc>
+              </circle>
+              <circle id="rey-16" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="80" stroke-dasharray="1 99">
+                <title id="titel-16">
+                </title>
+                <desc id="desc-16">
+                </desc>
+              </circle>
+              <circle id="rey-17" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="85" stroke-dasharray="1 99">
+                <title id="titel-17"></title>
+                <desc id="desc-17">
+                </desc>
+              </circle>
+              <circle id="rey-18" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="90" stroke-dasharray="1 99">
+                <title id="titel-18">
+                </title>
+                <desc id="desc-18">
+                </desc>
+              </circle>
+              <circle id="rey-19" class="sunrey" cx="21" fill="transparent" aria-labelledby="sunrey-title sunrey-desc" stroke-width="10" cy="21" r="15.5" stroke="red" stroke-dashoffset="95" stroke-dasharray="1 99">
+                <title id="titel-19">
+                </title>
+                <desc id="desc-19">
+                </desc>
+              </circle>
+              <g class="chart-text">
+                <text x="50%" y="50%" class="chart-number">
+                  Солнце
+                </text>
+                <text x="50%" y="50%" class="chart-label">
+                  Лучи добра
+                </text>
+              </g>
+            </svg>
+          </div>
+        </figure>
+  <div id="information">
+<script>
+
+  document.querySelector('#sunGood').addEventListener('click', function(e){ // Вешаем обработчик клика на UL, не LI
+  let id = e.target.id; // Получили ID, т.к. в e.target содержится элемент по которому кликнули
+  id = id.length - 1;
+  console.log(id);
+  document.write(valName[id].name + '\n');
+  document.write(valName[id].description);
+
+});
+
+  </script>
+  </div>
+</body></html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+#sunCanvas{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.sunrayGood{
+    position: relative;
+}
+
+.sunray{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: bisque;
+    color: brown;
+    outline: none;
+    transform: 0.5s;
+}
+.sunrayBtn{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: yellow;
+    color: brown;
+    outline: none;
+}
+#contentText{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+}
+.hide{display: none;}
+
+.infoBlock{
+    min-width: 500px;
+    width: 50vw;
+    min-height: 300px;
+    border-radius: 15px;
+    margin: auto;
+    background-color: #d7d7d7;
+    color: black;
+    padding: 1em;
+}
+.infoBlock img{
+    float: left;
+    height: auto;
+    width: 10em;
+    padding: 0.5em;
+
+}
+a svg{
+    height: 48px;
+    width: 48px;
+}
+    </style>
+    <div id="sunCanvas">
+    <div class="sunrayGood">
+        <a href="#" class="sunray" id="1">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 48 48" >
+            <path d="M543.927,425.964c0,5.942-4.979,10.775-11.176,10.775H381.253c-53.915,0-73.486,24.332-73.486,24.332l-2.489,3.344
+                l-1.163,1.617c-0.01,0-0.01,0-0.01,0c-5.142,6.979-12.702,0.055-12.738,0l-3.489-4.343c-2.589-3.107-22.396-24.95-70.32-24.95
+                H61.344c-6.169,0-11.148-4.852-11.148-10.794v-322.29c0-5.956,4.988-10.762,11.148-10.762h121.269
+                c90.209,0,98.75,51.235,99.341,66.114v224.148c0,16.291,7.759,19.335,12.139,19.78h6.524c4.461-0.445,11.557-3.099,11.557-15.791
+                V156.131h-0.081c0.69-18.635,7.94-63.238,62.201-63.238h158.458c6.197,0,11.176,4.811,11.176,10.762V425.964L543.927,425.964z
+                 M584.068,156.141h-0.527c-10.176,0.063-11.757-8.8-11.93-12.897V78.965c0-6.851-5.569-12.411-12.411-12.411H375.429
+                c-46.119,0-63.311,17.082-67.58,22.46l-1.173,1.617l-0.009,0.018l-3.644,4.988l0,0c-4.879,6.706-9.131,3.843-11.185,1.654
+                l-6.96-8.677l-3.434-4.143c-5.779-6.074-20.852-17.927-50.718-17.927H34.94c-6.86,0-12.42,5.561-12.42,12.412v63.469
+                c0,11.099-6.033,13.343-9.735,13.706h-2.762C7.01,156.309,0,158.067,0,170.969v302.423c0,7.433,6.02,13.447,13.438,13.447h178.683
+                c57.005,0,81.846,21.497,89.296,29.729l4.252,5.27h0.009c0,0,11.403,12.884,23.414,0l0,0l2.508-2.926v0.036l0.019-0.036
+                l3.18-3.725c0.091-0.109,0.863-0.964,1.963-2.108c9.521-9.249,33.29-26.24,79.773-26.24h184.153c7.423,0,13.42-6.015,13.42-13.447
+                V168.039C594.117,157.117,586.186,156.195,584.068,156.141L584.068,156.141z" vector-effect="non-scaling-stroke"/>
+        </svg></a>
+        <a href="#" class="sunray" id="2"></a>
+        <a href="#" class="sunray" id="3"></a>
+        <a href="#" class="sunray" id="4"></a>
+        <a href="#" class="sunray" id="5"></a>
+        <a href="#" class="sunray" id="6"></a>
+        <a href="#" class="sunray" id="7"></a> 
+        <a href="#" class="sunray" id="8"></a>
+        <a href="#" class="sunray" id="9"></a>
+        <a href="#" class="sunray" id="10"></a>
+        <a href="#" class="sunray" id="11"></a>
+        <a href="#" class="sunray" id="12"></a>
+        <a href="#" class="sunray" id="13"></a>
+        <a href="#" class="sunray" id="14"></a>
+        <a href="#" class="sunray" id="15"></a>
+        <a href="#" class="sunray" id="16"></a>
+        <a href="#" class="sunray" id="17"></a>
+        <a href="#" class="sunray" id="18"></a>
+        <a href="#" class="sunray" id="19"></a>
+        <a href="#" class="sunray" id="20"></a>
+        <a href="#" class="sunray" id="21"></a>
+        <a href="#" class="sunray" id="22"></a>
+        <a href="#" class="sunray" id="23"></a>
+        <a href="#" class="sunray" id="24"></a>
+        <a href="#" class="sunray" id="25"></a>
+        <a href="#" class="sunray" id="26"></a>
+        <a href="#" class="sunray" id="27"></a>
+        <a href="#" class="sunray" id="28"></a>
+        <a href="#" class="sunray" id="29"></a>
+        <a href="#" class="sunray" id="30"></a>
+        <a href="#" class="sunrayBtn"></a>
+    </div>
+</div>
+<div id="contentText">
+    <div class="infoBlock , hide">
+        <img src="http://www.brzabota.ru/upload/medialibrary/e93/e93f01ac06151babf5eea15992dbcefe.png">
+        <p>Вторжение России на Украину (российская агрессия против Украины, российско-украинская война, специальная военная операция на территории Украины)[⇨] началось 24 февраля 2022 года, примерно в 5 часов утра по киевскому времени[13]. Событиям предшествовали концентрация российских войск у российско-украинской границы и кризис в отношениях России и Украины. 21 февраля Россия признала самостоятельность ранее непризнанных Донецкой Народной Республики (ДНР) и Луганской Народной Республики (ЛНР), которые с 2014 года вели войну за полный контроль над территорией Донецкой и Луганской областей соответственно[⇨].
+            Многочисленные предупреждения о готовящемся вторжении публиковались в средствах массовой информации (СМИ) с октября 2021 года. Российские высшие официальные лица последовательно отрицали подготовку вторжения[14]. Утром 24 февраля вышло обращение президента России Владимира Путина о начале «специальной военной операции на Украине». Целью операции названа «демилитаризация и денацификация Украины»[15][16]. При этом заявлено, что оккупация Украины не планируется. В качестве оправдания вторжения Владимир Путин заявил о необходимости защиты ДНР, ЛНР и самой России, а также использовал ложное представление об Украине как о неонацистском государстве[⇨]. По мнению украинского руководства, главная цель действий Путина — ликвидация Украины как государства[17][18]. 5 марта он заявил, что может быть поднят «вопрос об украинской государственности»[19]. </p>
+    </div>
+    <div class="infoBlock , hide">2</div>
+    <div class="infoBlock , hide">3</div>
+    <div class="infoBlock , hide">4</div>
+    <div class="infoBlock , hide">5</div>
+    <div class="infoBlock , hide">6</div>
+    <div class="infoBlock , hide">7</div>
+    <div class="infoBlock , hide">8</div>
+    <div class="infoBlock , hide">9</div>
+    <div class="infoBlock , hide">10</div>
+    <div class="infoBlock , hide">11</div>
+    <div class="infoBlock , hide">12</div>
+    <div class="infoBlock , hide">13</div>
+    <div class="infoBlock , hide">14</div>
+    <div class="infoBlock , hide">15</div>
+    <div class="infoBlock , hide">16</div>
+</div>
+
+
+<div class="demo">
+    <div class="demo__content">
+  
+      <svg class="svg svg--nosizes" 
+           viewBox="0 0 150 150">
+          <circle r="60" cx="75" cy="75"
+                  fill="hsla(50, 100%,50%,.5)"
+                  stroke="black" stroke-width="1"
+                  vector-effect="non-scaling-stroke"/>
+      </svg>
+    </div>
+  
+  </div>
+  
+  
+    <script>
+        let menu = document.querySelector('.sunrayGood');
+        let infoContent = document.querySelectorAll('.infoBlock');
+        let content = document.getElementById("contentText");
+        let items = menu.querySelectorAll('.sunray');
+        let button =  menu.querySelector('.sunrayBtn');
+        let active = false;
+        let currentWindow;
+
+        const length = items.length;
+        const arc = 2 * Math.PI * (1/10);
+        const radius = 20;
+        let size
+        if(window.innerWidth > window.innerHeight){
+            size = Math.round(window.innerHeight * 0.7)
+            console.log("width");
+        } else{
+            size = Math.round(window.innerWidth * 0.7)
+            console.log("height");
+        }
+        menu.style.width = size + "px";
+        menu.style.height = size + "px";
+         
+    
+        button.addEventListener( 'click' , (e) =>{
+            e.preventDefault();
+            active = !active;
+    
+            if(active){
+                button.classList.add('sunrayBtnActive');
+                for (let i = 0; i < length; i++) {
+                    let x, y;
+                    if (i < 10){
+                        const angel = i * arc;
+                        x = radius * Math.cos(angel);
+                        y = radius * Math.sin(angel);
+                    }
+                    if (i >= 10 && i < 30){
+                        const angel = i * arc/2;
+                        x = radius * Math.cos(angel)*2;
+                        y = radius * Math.sin(angel)*2;
+                    }
+                    if (i >= 30 && i < 40){
+                        const angel = i * arc/2;
+                        x = Math.round(radius * Math.cos(angel)*2.5);
+                        y = Math.round(radius * Math.sin(angel)*2.5);
+                    }
+                    items[i].style.left = 50 + x + "%";
+                    items[i].style.top = 50 + y + "%";
+                }
+            }else{
+                button.classList.remove('sunrayBtnActive');
+                for (let i=0; i < length; i++){
+                    items[i].removeAttribute('style');
+                }
+            };
+    
+        });
+        window.addEventListener("mousedown", (e) => {
+            
+            if (e.target.classList == "sunray"){
+                currentWindow = e.target.id -1 ;
+                console.log(currentWindow);
+                content.style.display = "flex";
+                infoContent[currentWindow].classList.remove("hide");
+            }
+            if (e.target.id == "contentText"){
+                content.style.display = "none";
+                infoContent[currentWindow].classList.add("hide");
+            }
+        });
+        </script>
+</body>
+</html>

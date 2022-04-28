@@ -1,0 +1,74 @@
+body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.sunrayGood{
+    position: relative;
+}
+
+.sunray{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: bisque;
+    color: brown;
+    outline: none;
+    transform: 0.5s;
+}
+.sunrayBtn{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: yellow;
+    color: brown;
+    outline: none;
+}
+
+/*..sunrayLine,
+.sunrayLine::before,
+.sunrayLine::after{
+    position:absolute;
+    width: 40px;
+    height: 6px;
+    background-color: burlywood;
+    transform: 0.3s;
+}
+
+sunrayLine{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
+.sunrayLine::before{
+    content: '';
+}
+
+.sunrayLine::after{
+content: '';
+transform: rotate(90deg);
+}
+.sunrayBtnActive .sunrayLine::before{
+    background-color: transparent;
+}
+.sunrayBtnActive .sunrayLine::after{
+    background-color: transparent;
+}*/
+.sunrayBtnActive{
+    background-color: orange;
+}
