@@ -66,7 +66,7 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 request.onload = function() {
-    jsonSunArray = request.response;
+jsonSunArray = request.response;
 }
 window.addEventListener("mousedown", (e) => {
 
@@ -74,9 +74,11 @@ window.addEventListener("mousedown", (e) => {
         let currentWindow = jsonSunArray[e.target.id];
         console.log(currentWindow);
         content.style.display = "flex";
-        $(infoContent).append('<img src=' + currentWindow.img1+ '><img src='+currentWindow.img2+ '><p>'+currentWindow.leading+currentWindow.text+'</p>');
+        $(infoContent).append('<div id="info"><div class="gallery"><img class="image" src=' + currentWindow.img1+ '><img class="image" src='+currentWindow.img2+ '></div><p>'+currentWindow.leading+currentWindow.text+'</p></div>');
     }
     if (e.target.id == "contentText") {
         content.style.display = "none";
+        $('#info').remove();
+
     }
 });
