@@ -38,6 +38,7 @@
     background-color: yellow;
     color: brown;
     outline: none;
+    cursor:pointer;
 }
 
 #contentText {

@@ -9,7 +9,7 @@ var jsonSunArray;
 
 
 const length = items.length;
-const arc = 2 * Math.PI * (1 / 10);
+const arc = 2 * Math.PI * (1 / 5);
 const radius = 20;
 let size
 const sunRaySize = "7v";
@@ -35,20 +35,20 @@ button.addEventListener('click', (e) => {
         button.classList.add('sunrayBtnActive');
         for (let i = 0; i < length; i++) {
             let x, y;
-            if (i < 10) {
+            if (i < 5) {
                 const angel = i * arc;
                 x = radius * Math.cos(angel);
                 y = radius * Math.sin(angel);
             }
-            if (i >= 10 && i < 30) {
+            if (i >= 5 && i < 15) {
                 const angel = i * arc / 2;
                 x = radius * Math.cos(angel) * 2;
                 y = radius * Math.sin(angel) * 2;
             }
-            if (i >= 30 && i < 40) {
+            if (i >= 15 && i < 50) {
                 const angel = i * arc / 2;
-                x = Math.round(radius * Math.cos(angel) * 2.5);
-                y = Math.round(radius * Math.sin(angel) * 2.5);
+                x = Math.round(radius * Math.cos(angel) * 3);
+                y = Math.round(radius * Math.sin(angel) * 3);
             }
             items[i].style.left = 50 + x + "%";
             items[i].style.top = 50 + y + "%";
@@ -79,7 +79,7 @@ window.addEventListener("mousedown", (e) => {
         let currentWindow = jsonSunArray[e.target.id];
         console.log(currentWindow);
         content.style.display = "flex";
-        $(infoContent).append('<div id="info"><div class="gallery"><img class="image" src=' + currentWindow.img1+ '><img class="image" src='+currentWindow.img2+ '></div><p>'+currentWindow.leading+currentWindow.text+'</p></div>');
+        $(infoContent).append('<div id="info"><div class="gallery"><img class="image" src=' + currentWindow.img1+ '><img class="image" src='+currentWindow.img2+ '></div><p>'+currentWindow.leading+currentWindow.discription+'</p></div>');
     }
     if (e.target.id == "contentText") {
         content.style.display = "none";
