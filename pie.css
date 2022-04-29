@@ -16,14 +16,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 4em;
-    width: 4em;
+    height: 3em;
+    width: 3em;
     border-radius: 50%;
     text-decoration: none;
     background-color: bisque;
     color: brown;
     outline: none;
     transform: 0.5s;
+    cursor:pointer;
 }
 
 .sunrayBtn {
@@ -56,15 +57,26 @@
     min-width: 500px;
     width: 50vw;
     min-height: 300px;
+    height: 70vh;
     border-radius: 15px;
     margin: auto;
     background-color: #eee;
     color: black;
     padding: 1em;
     border: 5px solid #ddd;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #ddd #eee;
 
 }
+.infoBlock::-webkit-scrollbar{
+     width: 50px;
+     background: #eee;
+ }
 
+.infoBlock::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+}
 /**.infoBlock img {
     float: left;
     height: auto;
@@ -75,10 +87,9 @@
 
 
 .gallery {
-    white-space: nowrap hight;
     float: left;
     width: 15em;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .image {

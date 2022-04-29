@@ -12,11 +12,16 @@ const length = items.length;
 const arc = 2 * Math.PI * (1 / 10);
 const radius = 20;
 let size
+const sunRaySize = "7v";
 
 if (window.innerWidth > window.innerHeight) {
     size = Math.round(window.innerHeight * 0.7)
+    $('.sunray').css('height',sunRaySize+"h");
+    $('.sunray').css('width',sunRaySize+"h");
 } else {
     size = Math.round(window.innerWidth * 0.7)
+    $('.sunray').css('height',sunRaySize+"w");
+    $('.sunray').css('width',sunRaySize+"w");
 }
 menu.style.width = size + "px";
 menu.style.height = size + "px";
@@ -58,7 +63,7 @@ button.addEventListener('click', (e) => {
 });
 
 // создание JSON
-let requestURL = "http://127.0.0.1:5500/zabota/pie.json"; // ссылка на внешний JSON
+let requestURL = "http://127.0.0.1:5500/pie.json"; // ссылка на внешний JSON
 
 var request = new XMLHttpRequest();
 
