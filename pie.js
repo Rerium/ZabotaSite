@@ -34,9 +34,6 @@ const radius = 20;
 let size
 const sunRaySize = "7v";
 
-//Отрисовка "лучей"
-button.addEventListener('click', (e) => sunRice(e));
-button.addEventListener('touch', (e) => sunRice(e));
 
 
 if (window.innerWidth > window.innerHeight) {
@@ -51,11 +48,10 @@ if (window.innerWidth > window.innerHeight) {
 menu.style.width = size + "px";
 menu.style.height = size + "px";
 
-//"содержание" луча
-window.addEventListener("mousedown", (e) => addInfo(e));
-window.addEventListener("touch", (e) => addInfo(e));
 
-function sunRice(e){
+
+//Отрисовка "лучей"
+button.addEventListener('pointerup', (e) => {
     active = !active;
     if (active) {
         button.classList.add('sunrayBtnActive');
@@ -84,9 +80,11 @@ function sunRice(e){
         for (let i = 0; i < length; i++) {
             items[i].removeAttribute('style');
         }
-    };}
+    };
+});
 
-function addInfo(e){
+//"содержание" луча
+window.addEventListener("pointerup", (e) => {
     if (e.target.classList == "sunray") {
         let currentWindow = jsonSunArray[e.target.id];
         content.style.display = "flex";
@@ -109,7 +107,7 @@ function addInfo(e){
         $('#info').remove();
 
     }
-}
+});
 
 $(function () {
     $('.image').click(function (event) {
