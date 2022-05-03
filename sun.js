@@ -9,7 +9,7 @@ let active = false;
 let length;
 
 // создание JSON
-let requestURL = "pie.json"; // ссылка на внешний JSON
+let requestURL = "sun.json"; // ссылка на внешний JSON
 let request = new XMLHttpRequest();
 
 request.open('GET', requestURL);    //создается get-запрос по requestURL
@@ -19,7 +19,7 @@ request.send();                     //отправляется запрос
 request.onload = function () {
     jsonSunArray = request.response;
     let len = request.response.length;
-    for (let i = len; i >= 0; i--) {
+    for (let i = len-1; i >= 0; i--) {
         $(menu).prepend('<a class="sunray" id="' + i + '">' + (i + 1) + '</a>');
     }
     sunrayGood = document.querySelector('.sunrayGood');
@@ -29,7 +29,7 @@ request.onload = function () {
 
 }
 
-const arc = 2 * Math.PI * (1 / 5);
+const arc = 2 * Math.PI
 const radius = 20;
 let size
 const sunRaySize = "7v";
@@ -58,20 +58,16 @@ button.addEventListener('pointerup', (e) => {
         for (let i = 0; i < length; i++) {
             let x, y;
             if (i < 5) {
-                const angel = i * arc;
+                const angel = i * arc * (1 / 5);
                 x = radius * Math.cos(angel);
                 y = radius * Math.sin(angel);
             }
             if (i >= 5 && i < 15) {
-                const angel = i * arc / 2;
+                const angel = (i * arc * (1 / 3)) / 2;
                 x = radius * Math.cos(angel) * 2;
                 y = radius * Math.sin(angel) * 2;
             }
-            if (i >= 15 && i < 50) {
-                const angel = i * arc / 2;
-                x = Math.round(radius * Math.cos(angel) * 3);
-                y = Math.round(radius * Math.sin(angel) * 3);
-            }
+
             items[i].style.left = 50 + x + "%";
             items[i].style.top = 50 + y + "%";
         }
@@ -89,18 +85,20 @@ window.addEventListener("pointerup", (e) => {
         let currentWindow = jsonSunArray[e.target.id];
         content.style.display = "flex";
         $(infoContent).append('<div id="info">' +
-            '<div class="head">' +
-            '<div class="gallery">' +
-            '<img class="image" src=' + currentWindow.img1 + '>' +
-            '<img class="image" src=' + currentWindow.img2 + '>' +
-            '</div>' +
-            '<div class="">' +
-            '<h3>' + currentWindow.leading + '</h3>' +
-            '<h4>' + currentWindow.lable + '</h4>' +
-            '</div>' +
-            '</div>' +
-            '<p>' + currentWindow.discription + '</p>' +
-            '</div>');
+                                    '<div class="lable">' +
+                                        '<p>' + currentWindow.lable + '<p>' +
+                                    '</div>'+
+                                    '<div class="galleryContener">'+
+                                        '<div class="gallery">' +
+                                            '<div class="image"><img src=' + currentWindow.imgLeader1 + '>'+'<p>'+ currentWindow.leader1+ '</p>' +'</div>' +
+                                            '<div class="image"><img src=' + currentWindow.imgLeader2 + '>'+'<p>'+ currentWindow.leader2+ '</p>' +'</div>' +
+                                            '<div class="image"><img src=' + currentWindow.activity + '></div>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '<div class="discription">' +
+                                    '<p>' + currentWindow.discription + '</p>' +
+                                '</div>'+
+                            '</div>');
     }
     if (e.target.id == "contentText") {
         content.style.display = "none";
