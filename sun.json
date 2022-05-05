@@ -36,11 +36,11 @@
 },
 {
     "imgLeader1"        : "http://www.brzabota.ru/sun/img/sudarynya/leader1.jpg" ,
-    "imgLeader2"        : "" ,
+    "imgLeader2"        : "http://www.brzabota.ru/sun/img/sudarynya/leader2.jpg" ,
     "activity"          : "http://www.brzabota.ru/sun/img/sudarynya/activity.jpg",
     "lable"             : "Кружок «Сударыня»",
     "leader1"           : "Куркова Людмила Николаевна",
-    "leader2"           : "",
+    "leader2"           : "Груба Татьяна Евгеньевна",
     "discription"       : "Кружок объединяет любителей кулинарного творчества. Работает ежемесячно (один из понедельников в 13-00) в соответствии с тематическим планированием в помещении центра «Забота»."
 },
 {
